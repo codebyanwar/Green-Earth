@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- google font linked -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind css linked -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisy ui linked -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet linked -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="bg-[#15803D]">
+        <div class="xl:w-7xl mx-auto">
+            <div class="navbar">
+            <div class="navbar-start xl:w-3/12 py-3">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                </ul>
+                </div>
+                <a href="#" class="text-[32px] text-white font-semibold inter-font">Green Earth</a>
+            </div>
+            <div class="justify-center navbar-center hidden lg:flex xl:w-6/12">
+                <ul class="menu menu-horizontal text-lg text-white space-x-5 uppercase">
+                    <li><a class="bg-[#15803D] hover:underline">About</a></li>
+                    <li><a class="bg-[#15803D] hover:underline">Gallery</a></li>
+                    <li><a class="bg-[#15803D] hover:underline">Plant a Tree</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end xl:w-3/12">
+                <a class="btn">Button</a>
+            </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="./function.js"></script>
+</body>
+</html>
