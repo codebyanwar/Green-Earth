@@ -17,29 +17,18 @@
 
     <!-- daisy ui linked -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
     <!-- stylesheet linked -->
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="inter-font">
+    <!-- header start -->
     <header class="bg-[#15803D]">
         <div class="xl:w-7xl mx-auto">
             <div class="navbar">
             <div class="navbar-start xl:w-3/12 py-3">
-                <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-                </div>
-                <ul
-                    tabindex="-1"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a>About</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>Plant a Tree</a></li>
-                </ul>
-                </div>
-                <a href="#" class="text-[32px] text-white font-semibold inter-font">Green Earth</a>
+                <a href="#" class="md:text-[32px] text-[26px] text-white font-semibold inter-font">Green Earth</a>
             </div>
             <div class="justify-center navbar-center hidden lg:flex xl:w-6/12">
                 <ul class="menu menu-horizontal text-lg text-white space-x-5 uppercase">
@@ -49,11 +38,45 @@
                 </ul>
             </div>
             <div class="navbar-end xl:w-3/12">
-                <a class="btn">Button</a>
+                <a class="btn btn-primary shadow-none text-[#15803D] bg-[#FACC15] border-[#FACC15] hover:bg-transparent hover:text-[#FACC15] py-3 px-6 rounded-full">Plant a Tree</a>
+                <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <span><i class="bi bi-list text-[22px] text-white hover:text-[#15803D]"></i></span>
+                </div>
+                <ul
+                    tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a class="text-[15px]">About</a></li>
+                    <li><a class="text-[15px]">Gallery</a></li>
+                    <li><a class="text-[15px]">Plant a Tree</a></li>
+                </ul>
+                </div>
             </div>
             </div>
         </div>
     </header>
+
+    <!-- banner section start -->
+     <section class="bg-[#CFF0DC] py-[100px] relative">
+        <img src="./assets/hero-leaf1.png" alt="" class="absolute left-0 bottom-0 z-10">
+        <img src="./assets/hero-leaf2.png" alt="" class="absolute right-0 bottom-0">
+        <div class="xl:w-7xl mx-auto">
+            <div class="text-center lg:w-2xl mx-auto relative z-10">
+                <h2 class="text-[48px] text-[#1F2937] font-bold">Plant a Tree, Grow a Future</h2>
+                <p class="text-[18px] mb-4">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+                <a class="btn btn-primary shadow-none text-[#15803D] bg-[#FACC15] border-[#FACC15] hover:bg-transparent hover:text-[#FACC15] py-3 px-6 rounded-full">Get Involved</a>
+            </div>
+        </div>
+     </section>
+
+
+
+    <!-- footer start -->
+     <footer class="bg-[#14532D] py-5">
+        <div class="xl:w-7xl mx-auto">
+            <p class="lg:text-[18px] md:text-[16px] text-[14px] text-white text-center">© 2025 Green Earth. All Rights Reserved.</p>
+        </div>
+     </footer>
 
 
     <script src="./function.js"></script>
