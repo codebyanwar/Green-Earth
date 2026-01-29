@@ -1,3 +1,26 @@
+const allPlants=()=>{
+    const url= 'https://openapi.programming-hero.com/api/plants';
+
+    fetch(url)
+    .then(respon=>respon.json())
+    .then(data=>{
+        displayAllPlants(data.plants);
+    })
+}
+
+const displayAllPlants=(data)={
+    
+}
+
+
+// "id": 1,
+// "image": "https://i.ibb.co.com/cSQdg7tf/mango-min.jpg",
+// "name": "Mango Tree",
+// "description": "A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green canopy offers shade, while its sweet fruits are rich in vitamins and minerals.",
+// "category": "Fruit Tree",
+// "price": 500
+
+
 const categoryCard=(id)=>{
     const url= `https://openapi.programming-hero.com/api/category/${id}`;
     
@@ -8,12 +31,6 @@ const categoryCard=(id)=>{
     })
 }
 
-// "id": 4,
-// "image": "https://i.ibb.co.com/1YzsVWjm/Gulmohar-min.jpg",
-// "name": "Gulmohar",
-// "description": "Known as the ‘Flame of the Forest’, this tree bursts into a vibrant display of red flowers every summer. Perfect for beautifying avenues and gardens.",
-// "category": "Flowering Tree",
-// "price": 400
 
 const displayCatagoryCard=(plants)=>{
     const catagoryProductContainr=document.getElementById('catagory-product-container');
@@ -23,7 +40,7 @@ const displayCatagoryCard=(plants)=>{
         const products = document.createElement('div');
 
         products.innerHTML= `
-            <div class="sm:p-2 md:p-3 bg-white sm:rounded-md md:rounded-lg h-full flex flex-col">
+            <div class="sm:p-2 md:p-3 bg-white sm:rounded-md md:rounded-lg h-full flex flex-col justify-between">
                 <div>
                     <img class="sm:rounded-md md:rounded-lg h-80 w-full" src="${plant.image}" alt="">
                 </div>
