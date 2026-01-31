@@ -1,14 +1,30 @@
+        // Manage spinner start  
+const manageSpainner=(status)=>{
+    if(status===true){
+        document.getElementById('spinner').classList.remove('hidden');
+        document.getElementById('catagory-product-container').classList.add('hidden');
+    }else{
+        document.getElementById('spinner').classList.add('hidden');
+        document.getElementById('catagory-product-container').classList.remove('hidden');
+    }
+}
+        // Manage spinner end  
+
+
 const allPlants=()=>{
+    manageSpainner(true);
     const url= 'https://openapi.programming-hero.com/api/plants';
 
     fetch(url)
     .then(respon=>respon.json())
     .then(data=>{
         displayAllPlants(data.plants);
+        manageSpainner(false);
     })
 }
 
 const displayAllPlants=(datas)=>{
+
     const categoryProductContainer =document.getElementById('catagory-product-container');
 
     categoryProductContainer.innerHTML= '';
@@ -41,12 +57,15 @@ const displayAllPlants=(datas)=>{
 }
 
 const categoryCard=(id)=>{
+    manageSpainner(true);
+
     const url= `https://openapi.programming-hero.com/api/category/${id}`;
     
     fetch(url)
     .then(resp=>resp.json())
     .then(prom=>{
         displayCatagoryCard(prom.plants);
+        manageSpainner(false);
     })
 }
 
