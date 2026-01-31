@@ -80,7 +80,8 @@
                     <h3 class="text-[18px] lg:text-[20px] text-[#1F2937] font-bold mb-1.5">Categories</h3>
 
 
-                    <a onclick="allPlants()" class="text-[#1F2937] text-[14px] md:text-[16px] py-1 md:py-2 px-1 md:px-2 cursor-pointer btn bg-transparent w-full justify-start shadow-none border-none">All Category</a>
+                    <a id="all-category" onclick="allPlants(); setAllActive();" class="text-[#1F2937] text-[14px] md:text-[16px] py-1 md:py-2 px-1 md:px-2 cursor-pointer btn bg-transparent w-full justify-start shadow-none border-none plant-category">All Category</a>
+
                     <div id="green_categorys">
 
                     </div>
@@ -93,8 +94,17 @@
                     
                 </div>
 
-                <div class="xl:w-2/12 bg-red-100">
-                    <h3 class="text-[18px] lg:text-[20px] text-[#1F2937] font-bold">Your Cart</h3>
+                <div class="xl:w-2/12 bg-white py-2.5 px-4">
+                    <h3 class="text-[18px] lg:text-[20px] text-[#1F2937] font-bold mb-3">Your Cart</h3>
+                    
+                    <div class="mb-3" id="add-to-card-container">
+                        <p id="empty-card-message" class="text-[16px] text-[#1F2937]">your cart is empty</p>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between items-center mt-3">
+                        <h2>Total:</h2>
+                        <h2>৳<span id="available-amonun-in-total">0</span></h2>
+                    </div>
                 </div>
             </div>
         </div>
