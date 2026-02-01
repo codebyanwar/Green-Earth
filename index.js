@@ -35,7 +35,7 @@ const displayAllPlants=(datas)=>{
         div.innerHTML=`
             <div class="sm:p-2 md:p-3 bg-white sm:rounded-md md:rounded-lg h-full flex flex-col justify-between">
                 <div>
-                    <img class="sm:rounded-md md:rounded-lg h-80 w-full" src="${data.image}" alt="">
+                    <img class="sm:rounded-md md:rounded-lg h-60 w-full" src="${data.image}" alt="">
                 </div>
 
                 <div>
@@ -79,7 +79,7 @@ const displayCatagoryCard=(plants)=>{
         products.innerHTML= `
             <div class="sm:p-2 md:p-3 bg-white sm:rounded-md md:rounded-lg h-full flex flex-col justify-between">
                 <div>
-                    <img class="sm:rounded-md md:rounded-lg h-80 w-full" src="${plant.image}" alt="">
+                    <img class="sm:rounded-md md:rounded-lg h-60 w-full" src="${plant.image}" alt="">
                 </div>
 
                 <div>
